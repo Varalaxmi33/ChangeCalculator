@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Change Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="header">
+                <h1>💷 UK Change Calculator</h1>
+                <p>Calculate the exact change using UK currency denominations.</p>
+            </div>
+
+            <div class="form-group">
+                <label>Amount Given (£)</label>
+                <input type="number"
+                       id="amount"
+                       placeholder="Example: 20.00"
+                       step="0.01">
+            </div>
+
+            <div class="form-group">
+                <label>Product Price (£)</label>
+                <input type="number"
+                       id="price"
+                       placeholder="Example: 5.50"
+                       step="0.01">
+            </div>
+
+            <button onclick="calculate()">
+                Calculate Change
+            </button>
+
+            <div id="result"></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
